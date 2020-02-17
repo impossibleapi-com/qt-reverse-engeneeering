@@ -1,0 +1,524 @@
+Attribute Qt::AA_ShareOpenGLContexts must be set before QCoreApplication is created.
+disable_breakpoint pid=13470, addr=0x7fa231c080cd: No such process
+% time     seconds  usecs/call     calls      function
+------ ----------- ----------- --------- --------------------
+ 24.44   27.182775         638     42549 malloc
+ 10.66   11.854591     2963647         4 QMetaObject::activate(QObject*, QMetaObject const*, int, void**)
+ 10.29   11.442257         335     34079 free
+  8.60    9.567106     9567106         1 QNetworkAccessManager::get(QNetworkRequest const&)
+  5.13    5.704805         257     22122 strlen
+  3.90    4.333479     4333479         1 QQuickWebEngineProfile::defaultProfile()
+  3.68    4.093783         614      6663 operator<(QString const&, QString const&)
+  3.67    4.083468         226     18016 memcpy
+  3.22    3.584404      275723        13 QImageReader::size() const
+  3.14    3.491972      349197        10 QFontDatabase::addApplicationFont(QString const&)
+  2.02    2.250970         617      3645 QVariant::~QVariant()
+  1.79    1.994649         605      3292 strcpy
+  1.79    1.994588         626      3186 QString::fromUtf8_helper(char const*, int)
+  1.53    1.695940     1695940         1 system
+  1.46    1.628799      271466         6 wait3
+  1.38    1.535251     1535251         1 QMediaPlayer::QMediaPlayer(QObject*, QFlags<QMediaPlayer::Flag>)
+  1.05    1.163442         314      3694 operator delete(void*)
+  1.03    1.141660         632      1805 QVariant::QVariant(QVariant const&)
+  0.97    1.074961         567      1895 QMapDataBase::createNode(int, int, QMapNodeBase*, bool)
+  0.86    0.960637         637      1506 QVariant::QVariant(QString const&)
+  0.81    0.905858         174      5182 operator new(unsigned long)
+  0.81    0.899185         114      7859 memcmp
+  0.77    0.854694         283      3010 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+  0.70    0.780825      780825         1 QNetworkAccessManager::post(QNetworkRequest const&, QByteArray const&)
+  0.44    0.492251         125      3921 QString::fromAscii_helper(char const*, int)
+  0.39    0.432512      432512         1 QPixmap::load(QString const&, char const*, QFlags<Qt::ImageConversionFlag>)
+  0.38    0.417704          72      5757 __ctype_b_loc
+  0.31    0.341058          71      4793 strcmp
+  0.30    0.338041         420       804 QArrayData::deallocate(QArrayData*, unsigned long, unsigned long)
+  0.29    0.327087      327087         1 QApplication::QApplication(int&, char**, int)
+  0.27    0.294919          66      4433 __cxa_atexit
+  0.21    0.230042         151      1516 QListData::append()
+  0.16    0.182007         121      1501 std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+  0.16    0.180935         122      1481 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+  0.16    0.179378         112      1594 std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+  0.15    0.162378      162378         1 QtWebEngine::initialize()
+  0.14    0.152312      152312         1 QQmlApplicationEngine::load(QUrl const&)
+  0.11    0.122483         979       125 QObject::event(QEvent*)
+  0.11    0.117982         121       974 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*)
+  0.11    0.117802         610       193 QMapDataBase::createData()
+  0.11    0.117719         609       193 QMapDataBase::recalcMostLeftNode()
+  0.10    0.112409         621       181 QVariant::QVariant(QMap<QString, QVariant> const&)
+  0.10    0.110501         125       883 qHash(QString const&, unsigned int)
+  0.08    0.091655         123       745 operator==(QString const&, QString const&)
+  0.08    0.083704          76      1093 stpcpy
+  0.07    0.083165         126       659 __cxa_guard_acquire
+  0.07    0.080902         122       659 __cxa_guard_release
+  0.06    0.071805         579       124 QListData::dispose(QListData::Data*)
+  0.06    0.069070         115       598 std::_Rb_tree_decrement(std::_Rb_tree_node_base*)
+  0.06    0.064603         561       115 QListData::detach(int)
+  0.05    0.057931         622        93 QVariant::canConvert(int) const
+  0.05    0.054470       54470         1 QSqlDatabase::addDatabase(QString const&, QString const&)
+  0.04    0.048072         175       274 QString::operator=(QString const&)
+  0.04    0.046894         174       268 QString::toLower_helper(QString const&)
+  0.04    0.045664         671        68 QListData::erase(void**)
+  0.04    0.038998         150       259 QCoreApplication::translate(char const*, char const*, char const*, int)
+  0.04    0.038935        1216        32 QState::addTransition(QObject const*, char const*, QAbstractState*)
+  0.03    0.038769        2982        13 QImageReader::read(QImage*)
+  0.03    0.036985          98       377 QHashData::allocateNode(int)
+  0.03    0.036282         140       259 QString::mid(int, int) const
+  0.03    0.035889         182       197 QMetaType::registerNormalizedType(QByteArray const&, void (*)(void*), void* (*)(void*, void const*), int, QFlags<QMetaType::TypeFlag>, QMetaObject const*)
+  0.03    0.035082         135       258 QString::toInt(bool*, int) const
+  0.03    0.034212         622        55 QVariant::toMap() const
+  0.03    0.032029          70       457 std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)
+  0.03    0.031093         120       257 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.03    0.031015         608        51 QVariant::toString() const
+  0.03    0.029672          66       445 std::ios_base::Init::Init()
+  0.03    0.027982         162       172 QMetaObject::normalizedType(char const*)
+  0.02    0.027153         554        49 QMetaObject::Connection::~Connection()
+  0.02    0.025982          65       396 strcspn
+  0.02    0.025866       25866         1 QWindow::showNormal()
+  0.02    0.024967         520        48 QObject::connectImpl(QObject const*, void**, QObject const*, void**, QtPrivate::QSlotObjectBase*, Qt::ConnectionType, int const*, QMetaObject const*)
+  0.02    0.023670         107       221 std::ostream::write(char const*, long)
+  0.02    0.021227         606        35 QState::event(QEvent*)
+  0.02    0.020526          64       318 strpbrk
+  0.02    0.020452         786        26 QImage::QImage(QImage const&)
+  0.02    0.020319         121       167 QListData::detach_grow(int*, int)
+  0.02    0.020121        2515         8 read
+  0.02    0.018507         711        26 QImage::~QImage()
+  0.02    0.018436         709        26 QString::replace(QString const&, QString const&, Qt::CaseSensitivity)
+  0.02    0.018405         575        32 QMetaMethod::methodSignature() const
+  0.02    0.017845         121       147 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)
+  0.02    0.017594          65       269 mempcpy
+  0.02    0.017568         627        28 QString::number(int, int)
+  0.02    0.017393       17393         1 QQmlApplicationEngine::QQmlApplicationEngine(QObject*)
+  0.02    0.016839         526        32 QMetaMethod::fromSignalImpl(QMetaObject const*, void**)
+  0.01    0.016204         900        18 QJSValue::QJSValue(QJSValue const&)
+  0.01    0.016022         696        23 QJSValue::~QJSValue()
+  0.01    0.014672         666        22 QMutex::unlock()
+  0.01    0.014283         324        44 QObject::QObject(QObject*)
+  0.01    0.014109         251        56 QByteArray::QByteArray(char const*, int)
+  0.01    0.014022         637        22 QMutex::lock()
+  0.01    0.013509         115       117 memset
+  0.01    0.013468          62       215 strchr
+  0.01    0.012751          66       193 std::__cxx11::collate<char> const& std::use_facet<std::__cxx11::collate<char> >(std::locale const&)
+  0.01    0.011592         724        16 QString::QString(int, Qt::Initialization)
+  0.01    0.011591         551        21 QUrl::QUrl(QString const&, QUrl::ParsingMode)
+  0.01    0.011069         425        26 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::find(char, unsigned long) const
+  0.01    0.010705         713        15 QString::number(unsigned int, int)
+  0.01    0.010506         808        13 QImageReader::~QImageReader()
+  0.01    0.010443         803        13 QImage::size() const
+  0.01    0.010418         801        13 QSqlQuery::exec(QString const&)
+  0.01    0.010370         864        12 QJsonValue::~QJsonValue()
+  0.01    0.010127        1446         7 QJsonValue::QJsonValue(QString const&)
+  0.01    0.010010         770        13 QString::endsWith(QString const&, Qt::CaseSensitivity) const
+  0.01    0.009950         765        13 QUrl::toString(QUrlTwoFlags<QUrl::UrlFormattingOption, QUrl::ComponentFormattingOption>) const
+  0.01    0.009889         319        31 QMetaObject::className() const
+  0.01    0.009883         760        13 QUrl::isLocalFile() const
+  0.01    0.009797         753        13 QApplication::event(QEvent*)
+  0.01    0.009756         424        23 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::resize(unsigned long, char)
+  0.01    0.009731         648        15 fcntl
+  0.01    0.009633         741        13 QImageReader::setDecideFormatFromContent(bool)
+  0.01    0.009387         722        13 QImage::height() const
+  0.01    0.009280         713        13 QUrl::scheme() const
+  0.01    0.008951         688        13 QImage::sizeInBytes() const
+  0.01    0.008775        8775         1 QDateTime::currentDateTime()
+  0.01    0.008589         660        13 QSize::scaled(QSize const&, Qt::AspectRatioMode) const
+  0.01    0.008570         659        13 QImage::width() const
+  0.01    0.008505          64       132 _setjmp
+  0.01    0.008296         638        13 QImageReader::QImageReader(QString const&, QByteArray const&)
+  0.01    0.008234         294        28 QMetaType::registerNormalizedTypedef(QByteArray const&, int)
+  0.01    0.008199         409        20 QString::append(QString const&)
+  0.01    0.007833         559        14 QState::QState(QState*)
+  0.01    0.007772         597        13 QPaintDevice::QPaintDevice()
+  0.01    0.007617         585        13 QImage::QImage()
+  0.01    0.007519         578        13 QImageReader::setScaledSize(QSize const&)
+  0.01    0.007336         564        13 QImage::isNull() const
+  0.01    0.007210         480        15 QString::arg(QString const&, int, QChar) const
+  0.01    0.007067         371        19 QByteArray::append(char const*)
+  0.01    0.006882         764         9 QString::reallocData(unsigned int, bool)
+  0.01    0.006690         836         8 QString::split(QString const&, QString::SplitBehavior, Qt::CaseSensitivity) const
+  0.01    0.006417         916         7 QMapDataBase::freeTree(QMapNodeBase*, int)
+  0.01    0.006348         186        34 QByteArray::append(char)
+  0.01    0.006316          86        73 memmove
+  0.01    0.006266         160        39 QString::fromLatin1_helper(char const*, int)
+  0.01    0.005973         373        16 QQmlPrivate::qmlregister(QQmlPrivate::RegistrationType, void*)
+  0.01    0.005793         141        41 pthread_mutex_unlock
+  0.01    0.005693         271        21 std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)
+  0.01    0.005608        1121         5 QJsonValueRef::operator=(QJsonValue const&)
+  0.01    0.005606         243        23 QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>)
+  0.00    0.005496         785         7 QXmlStreamWriter::writeTextElement(QString const&, QString const&)
+  0.00    0.005351         764         7 QMapDataBase::freeData(QMapDataBase*)
+  0.00    0.005041         720         7 QChar::toUpper(unsigned int)
+  0.00    0.005000         121        41 pthread_mutex_lock
+  0.00    0.004990         178        28 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)
+  0.00    0.004981         996         5 QJsonObject::operator[](QString const&)
+  0.00    0.004943         706         7 QString::left(int) const
+  0.00    0.004888         162        30 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)
+  0.00    0.004857         539         9 QMapNodeBase::nextNode() const
+  0.00    0.004778         955         5 QJSEngine::create(int, void const*)
+  0.00    0.004679         116        40 std::istream::read(char*, long)
+  0.00    0.004675         116        40 std::strstream::~strstream()
+  0.00    0.004664         116        40 std::strstream::strstream()
+  0.00    0.004508         281        16 QSqlDatabase::~QSqlDatabase()
+  0.00    0.004362          87        50 __errno_location
+  0.00    0.004293         429        10 QSqlQuery::~QSqlQuery()
+  0.00    0.004276         712         6 QString::indexOf(QRegExp const&, int) const
+  0.00    0.004275        1068         4 QTranslator::load(QString const&, QString const&, QString const&, QString const&)
+  0.00    0.004170         278        15 QSqlDatabase::QSqlDatabase(QSqlDatabase const&)
+  0.00    0.004079        2039         2 QApplication::setStyleSheet(QString const&)
+  0.00    0.003944         986         4 QCoreApplication::installTranslator(QTranslator*)
+  0.00    0.003937         787         5 QEvent::~QEvent()
+  0.00    0.003771         538         7 QRegExp::~QRegExp()
+  0.00    0.003585         896         4 QSqlQuery::exec()
+  0.00    0.003523         352        10 std::ostream::operator<<(int)
+  0.00    0.003502         583         6 QColor::setNamedColor(QString const&)
+  0.00    0.003437         572         6 QString::trimmed_helper(QString const&)
+  0.00    0.003371         561         6 QQmlApplicationEngine::rootObjects() const
+  0.00    0.003318         276        12 std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)
+  0.00    0.003312         473         7 QRegExp::QRegExp(QString const&, Qt::CaseSensitivity, QRegExp::PatternSyntax)
+  0.00    0.003211        3211         1 QJsonObject::fromVariantMap(QMap<QString, QVariant> const&)
+  0.00    0.003174         317        10 QSqlQuery::QSqlQuery(QSqlDatabase)
+  0.00    0.003169         288        11 std::locale::locale()
+  0.00    0.003167         527         6 QJSValue::QJSValue(QJSValue::SpecialValue)
+  0.00    0.003106         258        12 fork
+  0.00    0.003070         614         5 QFile::open(QFlags<QIODevice::OpenModeFlag>)
+  0.00    0.003067         613         5 QLocale::~QLocale()
+  0.00    0.003050        1525         2 QDateTime::toTime_t() const
+  0.00    0.003031         757         4 QIODevice::readAll()
+  0.00    0.002985         106        28 __xstat64
+  0.00    0.002939         587         5 QVariant::toInt(bool*) const
+  0.00    0.002923         487         6 QSqlQuery::bindValue(QString const&, QVariant const&, QFlags<QSql::ParamTypeFlag>)
+  0.00    0.002835         708         4 QObject::qt_metacast(char const*)
+  0.00    0.002828         707         4 QCoreApplication::removeTranslator(QTranslator*)
+  0.00    0.002822         564         5 QStateMachine::addState(QAbstractState*)
+  0.00    0.002766         197        14 std::locale::~locale()
+  0.00    0.002730         248        11 std::ios_base::ios_base()
+  0.00    0.002729         682         4 QColor::invalidate()
+  0.00    0.002722         680         4 QFile::QFile(QString const&)
+  0.00    0.002695         269        10 std::ios_base::~ios_base()
+  0.00    0.002671        1335         2 QByteArray::toHex() const
+  0.00    0.002582         645         4 QVariant::QVariant(long long)
+  0.00    0.002522         315         8 QThread::currentThread()
+  0.00    0.002437         110        22 close
+  0.00    0.002391         478         5 QSqlQuery::prepare(QString const&)
+  0.00    0.002359         471         5 QCoreApplication::postEvent(QObject*, QEvent*, int)
+  0.00    0.002358         589         4 QVariant::QVariant(char const*)
+  0.00    0.002348         469         5 QVariant::QVariant(int)
+  0.00    0.002345         469         5 QEvent::QEvent(QEvent::Type)
+  0.00    0.002317        2317         1 QTcpServer::listen(QHostAddress const&, unsigned short)
+  0.00    0.002281         570         4 QNetworkAccessManager::QNetworkAccessManager(QObject*)
+  0.00    0.002281         126        18 pthread_mutex_init
+  0.00    0.002177         544         4 QAbstractConcatenable::appendLatin1To(char const*, int, QChar*)
+  0.00    0.002176         544         4 QFile::~QFile()
+  0.00    0.002137         152        14 QString::arg(long long, int, int, QChar) const
+  0.00    0.002115         705         3 QVariant::type() const
+  0.00    0.002103         420         5 QSqlQuery::next()
+  0.00    0.002057         685         3 QVariant::QVariant(bool)
+  0.00    0.002030        1015         2 QDBusConnection::localMachineId()
+  0.00    0.002010        1005         2 QObject::qt_metacall(QMetaObject::Call, int, void**)
+  0.00    0.002007        2007         1 QJsonValue::QJsonValue(long long)
+  0.00    0.001993         104        19 QByteArray::append(char const*, int)
+  0.00    0.001986         496         4 strtoll
+  0.00    0.001963         109        18 pthread_mutexattr_destroy
+  0.00    0.001947         139        14 sigaction
+  0.00    0.001938         646         3 QLocale::uiLanguages() const
+  0.00    0.001930         643         3 QMetaObject::cast(QObject*) const
+  0.00    0.001927         963         2 QNetworkRequest::QNetworkRequest(QUrl const&)
+  0.00    0.001919          63        30 strchrnul
+  0.00    0.001846         167        11 calloc
+  0.00    0.001814         453         4 QString::toUtf8_helper(QString const&)
+  0.00    0.001800         900         2 QStateMachine::start()
+  0.00    0.001783        1783         1 QXmlStreamWriter::setAutoFormatting(bool)
+  0.00    0.001777          98        18 pthread_mutexattr_settype
+  0.00    0.001767         220         8 QHashData::detach_helper(void (*)(QHashData::Node*, void*), void (*)(QHashData::Node*), int, int)
+  0.00    0.001754        1754         1 QApplication::setPalette(QPalette const&, char const*)
+  0.00    0.001744        1744         1 QXmlStreamWriter::writeStartDocument()
+  0.00    0.001732         433         4 __memcpy_chk
+  0.00    0.001728          96        18 pthread_mutexattr_init
+  0.00    0.001669         834         2 QObject::setParent(QObject*)
+  0.00    0.001656         331         5 QTimer::QTimer(QObject*)
+  0.00    0.001641         547         3 QFinalState::QFinalState(QState*)
+  0.00    0.001613         806         2 QJsonObject::~QJsonObject()
+  0.00    0.001606         267         6 QDir::QDir(QString const&)
+  0.00    0.001582         263         6 QDir::~QDir()
+  0.00    0.001578          63        25 std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+  0.00    0.001552         258         6 QString::compare_helper(QChar const*, int, char const*, int, Qt::CaseSensitivity)
+  0.00    0.001550         193         8 setsockopt
+  0.00    0.001471          66        22 __strtol_internal
+  0.00    0.001464         162         9 QHashData::rehash(int)
+  0.00    0.001458         729         2 QString::remove(int, int)
+  0.00    0.001430        1430         1 QUrlQuery::~QUrlQuery()
+  0.00    0.001411         470         3 QTranslator::QTranslator(QObject*)
+  0.00    0.001392          63        22 std::_Hash_bytes(void const*, unsigned long, unsigned long)
+  0.00    0.001385         692         2 QPalette::~QPalette()
+  0.00    0.001382         172         8 QMetaType::registerConverterFunction(QtPrivate::AbstractConverterFunction const*, int, int)
+  0.00    0.001356        1356         1 QTcpServer::QTcpServer(QObject*)
+  0.00    0.001353         451         3 QDateTime::~QDateTime()
+  0.00    0.001353         676         2 QCryptographicHash::hash(QByteArray const&, QCryptographicHash::Algorithm)
+  0.00    0.001345         168         8 QMutex::QMutex(QMutex::RecursionMode)
+  0.00    0.001309          77        17 strtol
+  0.00    0.001300         650         2 QSqlDatabase::open()
+  0.00    0.001286         183         7 QJsonObject::insert(QString const&, QJsonValue const&)
+  0.00    0.001264        1264         1 QXmlStreamWriter::setDevice(QIODevice*)
+  0.00    0.001258          66        19 strdup
+  0.00    0.001243         621         2 QLibraryInfo::location(QLibraryInfo::LibraryLocation)
+  0.00    0.001232         616         2 QUrl::QUrl(QUrl const&)
+  0.00    0.001210        1210         1 QBuffer::open(QFlags<QIODevice::OpenModeFlag>)
+  0.00    0.001196         108        11 QMetaType::typeName(int)
+  0.00    0.001195          59        20 realloc
+  0.00    0.001184         592         2 QVariant::QVariant(QList<QVariant> const&)
+  0.00    0.001180         590         2 QApplication::qt_metacast(char const*)
+  0.00    0.001178        1178         1 QXmlStreamWriter::writeEndDocument()
+  0.00    0.001175         587         2 QNetworkRequest::~QNetworkRequest()
+  0.00    0.001175          78        15 __vsnprintf_chk
+  0.00    0.001145        1145         1 QState::addTransition(QAbstractTransition*)
+  0.00    0.001139         569         2 QLocale::QLocale(QString const&)
+  0.00    0.001133        1133         1 QGuiApplication::screens()
+  0.00    0.001132         566         2 QVariant::operator=(QVariant const&)
+  0.00    0.001125        1125         1 QXmlStreamWriter::writeEndElement()
+  0.00    0.001124         562         2 QQmlEngine::setObjectOwnership(QObject*, QQmlEngine::ObjectOwnership)
+  0.00    0.001121          65        17 QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>)
+  0.00    0.001114         557         2 QVariant::toBool() const
+  0.00    0.001111          69        16 fnmatch
+  0.00    0.001109         554         2 QFileDevice::close()
+  0.00    0.001099        1099         1 QSqlQuery::execBatch(QSqlQuery::BatchExecutionMode)
+  0.00    0.001098         549         2 QString::right(int) const
+  0.00    0.001096         548         2 QtPrivate::QStringList_join(QStringList const*, QChar const*, int)
+  0.00    0.001086        1086         1 QVariant::toReal(bool*) const
+  0.00    0.001077          76        14 icu_55::UnicodeString::UnicodeString(char const*)
+  0.00    0.001070         535         2 QState::setInitialState(QAbstractState*)
+  0.00    0.001067         533         2 QStateMachine::QStateMachine(QObject*)
+  0.00    0.001060         530         2 QMetaObject::Connection::isConnected_helper() const
+  0.00    0.001042         521         2 QDir::exists(QString const&) const
+  0.00    0.001038         519         2 QByteArray::toBase64() const
+  0.00    0.001012        1012         1 QNetworkRequest::setHeader(QNetworkRequest::KnownHeaders, QVariant const&)
+  0.00    0.000966         966         1 QQuickWebEngineProfile::setPersistentStoragePath(QString const&)
+  0.00    0.000949         474         2 QByteArray::isNull() const
+  0.00    0.000937         468         2 QUrl::QUrl()
+  0.00    0.000933          62        15 qRegisterResourceData(int, unsigned char const*, unsigned char const*, unsigned char const*)
+  0.00    0.000920         920         1 QXmlStreamWriter::~QXmlStreamWriter()
+  0.00    0.000914         457         2 QLocale::QLocale(QLocale::Language, QLocale::Script, QLocale::Country)
+  0.00    0.000897          64        14 icu_55::UnicodeString::UnicodeString(icu_55::UnicodeString const&)
+  0.00    0.000890          68        13 QByteArray::fromHex(QByteArray const&)
+  0.00    0.000881         440         2 QJsonObject::QJsonObject()
+  0.00    0.000880          40        22 strtod
+  0.00    0.000870         124         7 signal
+  0.00    0.000868         144         6 QOperatingSystemVersion::current()
+  0.00    0.000859         107         8 QMetaType::hasRegisteredConverterFunction(int, int)
+  0.00    0.000849         849         1 QQuickWebEngineProfile::setPersistentCookiesPolicy(QQuickWebEngineProfile::PersistentCookiesPolicy)
+  0.00    0.000839         104         8 QByteArray::endsWith(char) const
+  0.00    0.000834         834         1 QVariant::QVariant(double)
+  0.00    0.000811         811         1 QBuffer::QBuffer(QByteArray*, QObject*)
+  0.00    0.000805         134         6 sigprocmask
+  0.00    0.000802         160         5 __xstat
+  0.00    0.000778         778         1 QCoreApplication::QCoreApplication(int&, char**, int)
+  0.00    0.000768         384         2 setlocale
+  0.00    0.000761         761         1 QXmlStreamWriter::QXmlStreamWriter()
+  0.00    0.000712         712         1 QQuickWebEngineProfile::httpUserAgent() const
+  0.00    0.000702          87         8 sigfillset
+  0.00    0.000702         702         1 QState::qt_metacall(QMetaObject::Call, int, void**)
+  0.00    0.000700         700         1 QPalette::setBrush(QPalette::ColorGroup, QPalette::ColorRole, QBrush const&)
+  0.00    0.000695         695         1 QWindow::frameMargins() const
+  0.00    0.000690         690         1 QBrush::~QBrush()
+  0.00    0.000662         662         1 QDateTime::currentMSecsSinceEpoch()
+  0.00    0.000657         657         1 QWindow::setScreen(QScreen*)
+  0.00    0.000654         654         1 QHostAddress::~QHostAddress()
+  0.00    0.000652         652         1 QJsonDocument::~QJsonDocument()
+  0.00    0.000643         643         1 QVariant::userType() const
+  0.00    0.000642         642         1 QHostAddress::QHostAddress(QHostAddress::SpecialAddress)
+  0.00    0.000637          91         7 dup2
+  0.00    0.000636         636         1 QScreen::geometry() const
+  0.00    0.000634         634         1 QVariant::QVariant(int, void const*, unsigned int)
+  0.00    0.000631         631         1 QLocale::system()
+  0.00    0.000615         615         1 QJsonValue::QJsonValue(QJsonObject const&)
+  0.00    0.000599         599         1 QXmlStreamWriter::writeStartElement(QString const&)
+  0.00    0.000592         592         1 QUrlQuery::QUrlQuery()
+  0.00    0.000588         588         1 QJsonDocument::QJsonDocument(QJsonObject const&)
+  0.00    0.000588         588         1 QObject::installEventFilter(QObject*)
+  0.00    0.000587         195         3 QDir::mkpath(QString const&) const
+  0.00    0.000585         585         1 QBuffer::~QBuffer()
+  0.00    0.000584         584         1 QByteArray::operator=(char const*)
+  0.00    0.000582         582         1 QQuickImageProvider::QQuickImageProvider(QQmlImageProviderBase::ImageType, QFlags<QQmlImageProviderBase::Flag>)
+  0.00    0.000581         290         2 QSqlQuery::value(int) const
+  0.00    0.000581         290         2 QDateTime::currentDateTimeUtc()
+  0.00    0.000578         578         1 QAbstractTransition::QAbstractTransition(QState*)
+  0.00    0.000577         577         1 QGuiApplication::palette()
+  0.00    0.000577         577         1 QQmlEngine::rootContext() const
+  0.00    0.000577         577         1 QBrush::QBrush(QColor const&, Qt::BrushStyle)
+  0.00    0.000576         576         1 QObject::moveToThread(QThread*)
+  0.00    0.000573         573         1 QBuffer::close()
+  0.00    0.000573         191         3 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::swap(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+  0.00    0.000566         566         1 QScreen::availableGeometry() const
+  0.00    0.000565         565         1 QRect::contains(QPoint const&, bool) const
+  0.00    0.000560         560         1 QXmlStreamReader::QXmlStreamReader()
+  0.00    0.000560         560         1 QQmlEngine::setNetworkAccessManagerFactory(QQmlNetworkAccessManagerFactory*)
+  0.00    0.000559         559         1 qmlRegisterUncreatableMetaObject(QMetaObject const&, char const*, int, int, char const*, QString const&)
+  0.00    0.000556         556         1 QColor::lightnessF() const
+  0.00    0.000556          69         8 fclose
+  0.00    0.000545         545         1 QVariant::constData() const
+  0.00    0.000545         545         1 QLocale::script() const
+  0.00    0.000542          90         6 geteuid
+  0.00    0.000538         538         1 QQmlContext::setContextObject(QObject*)
+  0.00    0.000536         536         1 QObject::connect(QObject const*, char const*, QObject const*, char const*, Qt::ConnectionType)
+  0.00    0.000536         536         1 QWindow::setGeometry(QRect const&)
+  0.00    0.000535         535         1 QQuickWebEngineProfile::setCachePath(QString const&)
+  0.00    0.000535         535         1 QTimer::start(int)
+  0.00    0.000533         533         1 QTcpServer::close()
+  0.00    0.000524         524         1 QString::operator=(QLatin1String)
+  0.00    0.000512         512         1 QJsonDocument::toJson(QJsonDocument::JsonFormat) const
+  0.00    0.000511         511         1 QString::toLatin1_helper(QString const&)
+  0.00    0.000508         508         1 QLocale::language() const
+  0.00    0.000507         507         1 QUrl::operator=(QUrl const&)
+  0.00    0.000488         488         1 QLocale::country() const
+  0.00    0.000474         474         1 QString::remove(QString const&, Qt::CaseSensitivity)
+  0.00    0.000474         474         1 QUrlQuery::addQueryItem(QString const&, QString const&)
+  0.00    0.000474         474         1 QUrl::operator!=(QUrl const&) const
+  0.00    0.000469         469         1 QMetaObject::Connection::Connection()
+  0.00    0.000462         462         1 QUrl::setQuery(QUrlQuery const&)
+  0.00    0.000459          45        10 __freading
+  0.00    0.000452         150         3 QTimer::setInterval(int)
+  0.00    0.000446         446         1 QQmlEngine::addImageProvider(QString const&, QQmlImageProviderBase*)
+  0.00    0.000445          49         9 fileno
+  0.00    0.000436         436         1 QDir::tempPath()
+  0.00    0.000432         432         1 QLocale::textDirection() const
+  0.00    0.000429         143         3 QJsonValue::QJsonValue(int)
+  0.00    0.000424         106         4 QString::startsWith(QString const&, Qt::CaseSensitivity) const
+  0.00    0.000423          84         5 operator new[](unsigned long)
+  0.00    0.000401          66         6 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char)
+  0.00    0.000390         195         2 open64
+  0.00    0.000387         387         1 QIcon::QIcon(QPixmap const&)
+  0.00    0.000347         115         3 write
+  0.00    0.000345         345         1 QCoreApplication::removeLibraryPath(QString const&)
+  0.00    0.000339          84         4 getopt_long
+  0.00    0.000320         160         2 socketpair
+  0.00    0.000312          62         5 std::locale::locale(std::locale const&)
+  0.00    0.000311          62         5 memalign
+  0.00    0.000306         306         1 QCoreApplication::addLibraryPath(QString const&)
+  0.00    0.000306         306         1 QSqlDatabase::tables(QSql::TableType) const
+  0.00    0.000305         101         3 getuid
+  0.00    0.000297         297         1 QApplication::setWindowIcon(QIcon const&)
+  0.00    0.000293         146         2 getppid
+  0.00    0.000292         292         1 QThread::start(QThread::Priority)
+  0.00    0.000290          96         3 time
+  0.00    0.000282          94         3 strrchr
+  0.00    0.000281         140         2 QPixmap::isNull() const
+  0.00    0.000278         278         1 QSqlDatabase::operator=(QSqlDatabase const&)
+  0.00    0.000272         272         1 QQuickWindow::setDefaultAlphaBuffer(bool)
+  0.00    0.000266         266         1 QApplication::setFont(QFont const&, char const*)
+  0.00    0.000256         256         1 mlock
+  0.00    0.000247         247         1 qputenv(char const*, QByteArray const&)
+  0.00    0.000247         247         1 QApplication::setAutoSipEnabled(bool)
+  0.00    0.000246          49         5 __fpending
+  0.00    0.000243         121         2 QSqlDatabase::QSqlDatabase()
+  0.00    0.000216         216         1 std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)
+  0.00    0.000215         107         2 gettimeofday
+  0.00    0.000214          71         3 QString::QString(QChar)
+  0.00    0.000213         106         2 pthread_spin_init
+  0.00    0.000211         105         2 QEvent::registerEventType(int)
+  0.00    0.000208         104         2 pipe
+  0.00    0.000205          68         3 QCoreApplication::setAttribute(Qt::ApplicationAttribute, bool)
+  0.00    0.000205          51         4 fflush
+  0.00    0.000204          68         3 getenv
+  0.00    0.000200         200         1 QCoreApplication::setApplicationName(QString const&)
+  0.00    0.000199          99         2 getegid
+  0.00    0.000199          66         3 ceil
+  0.00    0.000197         197         1 QPixmap::QPixmap(QPixmap const&)
+  0.00    0.000197          98         2 QDir::separator()
+  0.00    0.000195         195         1 QDir::fromNativeSeparators(QString const&)
+  0.00    0.000191          63         3 std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+  0.00    0.000188          94         2 getgid
+  0.00    0.000187          93         2 getpid
+  0.00    0.000179         179         1 QReadWriteLock::QReadWriteLock(QReadWriteLock::RecursionMode)
+  0.00    0.000177          88         2 bindtextdomain
+  0.00    0.000175         175         1 QNetworkProxyFactory::setUseSystemConfiguration(bool)
+  0.00    0.000173         173         1 epoll_create
+  0.00    0.000171         171         1 VideoCallStats::VideoCallStats::VideoCallStats()
+  0.00    0.000167         167         1 QSqlDatabase::contains(QString const&)
+  0.00    0.000165         165         1 QIcon::~QIcon()
+  0.00    0.000157          78         2 open
+  0.00    0.000155         155         1 rename
+  0.00    0.000151         151         1 QThread::QThread(QObject*)
+  0.00    0.000148         148         1 QDateTime::fromSecsSinceEpoch(long long, Qt::TimeSpec, int)
+  0.00    0.000147         147         1 QSqlDatabase::databaseName() const
+  0.00    0.000143         143         1 QSqlDatabase::setConnectOptions(QString const&)
+  0.00    0.000141         141         1 QSqlDatabase::setDatabaseName(QString const&)
+  0.00    0.000137         137         1 __uflow
+  0.00    0.000136          68         2 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)
+  0.00    0.000135          67         2 lseek
+  0.00    0.000134          67         2 std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::resize(unsigned long, wchar_t)
+  0.00    0.000134          67         2 __snprintf_chk
+  0.00    0.000132          66         2 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(char const*) const
+  0.00    0.000129         129         1 QObject::setObjectName(QString const&)
+  0.00    0.000128         128         1 QFile::QFile()
+  0.00    0.000128         128         1 QDateTime::toSecsSinceEpoch() const
+  0.00    0.000127          63         2 std::locale::operator=(std::locale const&)
+  0.00    0.000127          63         2 std::allocator<char>::allocator()
+  0.00    0.000127          63         2 pthread_self
+  0.00    0.000126         126         1 mmap
+  0.00    0.000126          63         2 std::allocator<char>::~allocator()
+  0.00    0.000126         126         1 QGuiApplication::setLayoutDirection(Qt::LayoutDirection)
+  0.00    0.000124         124         1 QPixmap::QPixmap()
+  0.00    0.000123         123         1 getrlimit
+  0.00    0.000122         122         1 QFont::insertSubstitutions(QString const&, QStringList const&)
+  0.00    0.000122         122         1 QFontInfo::QFontInfo(QFont const&)
+  0.00    0.000120         120         1 srand
+  0.00    0.000119         119         1 sandbox::localtime_r_override(long const*, tm*)
+  0.00    0.000118         118         1 QSqlDatabase::cloneDatabase(QSqlDatabase const&, QString const&)
+  0.00    0.000116         116         1 QString::arg(unsigned long long, int, int, QChar) const
+  0.00    0.000114         114         1 QFont::QFont(QString const&, int, int, bool)
+  0.00    0.000114         114         1 readlink
+  0.00    0.000111         111         1 QSqlQuery::first()
+  0.00    0.000109         109         1 madvise
+  0.00    0.000109         109         1 QCoreApplication::applicationDirPath()
+  0.00    0.000107          53         2 textdomain
+  0.00    0.000107         107         1 QFont::setStyleStrategy(QFont::StyleStrategy)
+  0.00    0.000106         106         1 QCoreApplication::setOrganizationName(QString const&)
+  0.00    0.000106         106         1 QGuiApplication::setFallbackSessionManagementEnabled(bool)
+  0.00    0.000106          35         3 _IO_putc
+  0.00    0.000106         106         1 QMetaType::registerComparatorFunction(QtPrivate::AbstractComparatorFunction const*, int)
+  0.00    0.000106         106         1 getcwd
+  0.00    0.000106         106         1 QFont::~QFont()
+  0.00    0.000106         106         1 QGuiApplication::setQuitOnLastWindowClosed(bool)
+  0.00    0.000106         106         1 chdir
+  0.00    0.000106         106         1 QFontInfo::~QFontInfo()
+  0.00    0.000106         106         1 QCoreApplication::setOrganizationDomain(QString const&)
+  0.00    0.000105         105         1 QAbstractConcatenable::convertFromAscii(char const*, int, QChar*&)
+  0.00    0.000104         104         1 QCoreApplication::arguments()
+  0.00    0.000104         104         1 QCoreApplication::applicationFilePath()
+  0.00    0.000100         100         1 uname
+  0.00    0.000098          98         1 posix_fadvise
+  0.00    0.000092          30         3 ferror
+  0.00    0.000091          91         1 std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()
+  0.00    0.000090          90         1 QSqlDatabase::isOpen() const
+  0.00    0.000087          87         1 QFont::setPixelSize(int)
+  0.00    0.000081          40         2 isatty
+  0.00    0.000081          40         2 __lxstat
+  0.00    0.000076          38         2 is_selinux_enabled
+  0.00    0.000074          74         1 qsort
+  0.00    0.000074          74         1 euidaccess
+  0.00    0.000073          73         1 QRegularExpression::QRegularExpression(QString const&, QFlags<QRegularExpression::PatternOption>)
+  0.00    0.000071          71         1 QString::replace(QRegExp const&, QString const&)
+  0.00    0.000070          70         1 QRegularExpression::escape(QString const&)
+  0.00    0.000068          68         1 sysconf
+  0.00    0.000068          68         1 std::__codecvt_utf8_base<wchar_t>::~__codecvt_utf8_base()
+  0.00    0.000067          67         1 std::__codecvt_utf8_base<wchar_t>::do_max_length() const
+  0.00    0.000067          67         1 pthread_getspecific
+  0.00    0.000067          67         1 std::ctype<char>::_M_widen_init() const
+  0.00    0.000067          67         1 std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::swap(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)
+  0.00    0.000066          66         1 __dynamic_cast
+  0.00    0.000066          66         1 std::codecvt<wchar_t, char, __mbstate_t>::codecvt(unsigned long)
+  0.00    0.000066          66         1 std::locale::id::_M_id() const
+  0.00    0.000065          65         1 wcslen
+  0.00    0.000065          65         1 wmemcpy
+  0.00    0.000065          65         1 std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_assign(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)
+  0.00    0.000065          65         1 pthread_key_create
+  0.00    0.000065          65         1 std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_create(unsigned long&, unsigned long)
+  0.00    0.000065          65         1 QThreadStorageData::QThreadStorageData(void (*)(void*))
+  0.00    0.000064          64         1 QFileDevice::handle() const
+  0.00    0.000064          64         1 QString::truncate(int)
+  0.00    0.000064          64         1 qChecksum(char const*, unsigned int)
+  0.00    0.000063          63         1 QDir::absolutePath() const
+  0.00    0.000063          63         1 QFile::setFileName(QString const&)
+  0.00    0.000063          63         1 QIODevice::isOpen() const
+  0.00    0.000061          61         1 pthread_setspecific
+  0.00    0.000061          30         2 fwrite
+  0.00    0.000060          30         2 strncmp
+  0.00    0.000060          60         1 clearerr_unlocked
+------ ----------- ----------- --------- --------------------
+100.00  111.201190                199529 total
